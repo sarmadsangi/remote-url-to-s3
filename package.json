@@ -1,0 +1,29 @@
+{
+  "name": "remote_url_to_s3",
+  "version": "0.0.3",
+  "description": "Stream a file from remote url and upload it to s3 bucket",
+  "main": "remote_url_to_s3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarmadsangi/remote_url_to_s3.git"
+  },
+  "keywords": [
+    "s3",
+    "stream",
+    "s3 upload",
+    "remote file upload"
+  ],
+  "author": "sarmadsangi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarmadsangi/remote_url_to_s3/issues"
+  },
+  "homepage": "https://github.com/sarmadsangi/remote_url_to_s3#readme",
+  "dependencies": {
+    "knox": "^0.9.2",
+    "request": "^2.69.0"
+  }
+}
