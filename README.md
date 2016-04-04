@@ -14,6 +14,8 @@ remoteFileToS3.config({
   secret: 'your_s3Secret'
 });
 
-remoteFileToS3.downloadFromUrlAndUploadToS3('https://remote.com/filename.jpg', 'filename_in_s3.js')
+remoteFileToS3.downloadFromUrlAndUploadToS3('https://remote.com/filename.jpg', 'filename_in_s3.jpg', function (response) {
+  console.log('Done uploading filename_in_s3.jpg');
+});
 
 ```
