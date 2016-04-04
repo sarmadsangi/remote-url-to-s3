@@ -6,8 +6,11 @@ exports.config = function (options) {
   s3Client = knox.createClient(options);
 };
 
-
 exports.downloadFromUrlAndUploadToS3 = function (uri, filename, callback) {
+  if (!s3Client) {
+      console.error('Error! no config found. Please set s3 configuration using config(options) method before calling downloadFromUrlAndUploadToS3');
+  }
+
   request.head(uri, function(err, res, body){
     console.log('content-type:', res.headers['content-type']);
     console.log('content-length:', res.headers['content-length']);
@@ -35,7 +38,4 @@ exports.downloadFromUrlAndUploadToS3 = function (uri, filename, callback) {
     });
   });
 };
-
-downloadFromUrlAndUploadToS3('https://remotehost.com/filename.jpg', 'folder/filename.jpg');
-
 
