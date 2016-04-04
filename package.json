@@ -1,14 +1,14 @@
 {
-  "name": "remote_url_to_s3",
+  "name": "remoteUrlToS3",
   "version": "0.0.3",
   "description": "Stream a file from remote url and upload it to s3 bucket",
-  "main": "remote_url_to_s3.js",
+  "main": "remoteUrlToS3.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sarmadsangi/remote_url_to_s3.git"
+    "url": "git+https://github.com/sarmadsangi/remoteUrlToS3.git"
   },
   "keywords": [
     "s3",
